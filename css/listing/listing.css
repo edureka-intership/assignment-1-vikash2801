@@ -4,6 +4,7 @@ body{
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
+    font-family:Arial, Helvetica, sans-serif;
 }
 a{
     text-decoration: none;
@@ -15,15 +16,18 @@ header{
     /* border:2px solid red; */
     background-color:#3b2632;
     position:sticky;
+    top:0;
+    
 }
 #brand{
     float:left;
     margin-left: 2%;
+    margin-top:10px;
     font-size:35px;
-    
 }
 #brand >a{
-    color: white !important
+    color: red !important;
+    font-weight:bold;
 }
 #social{
     float:right;
@@ -32,14 +36,12 @@ header{
 .socialLogo{
     height:50px
 }
-
 /**/
 #content{
     width:80%;
     display: inline-block;
     margin-left: 10%;
     margin-top:2%;
-    position:relative;
 }
 
 #filterDiv{
@@ -49,7 +51,9 @@ header{
     border-radius: 15px;
     float: left;
     background: #D7D4DC;
-   
+    position: sticky;
+    top:60px;
+    left:10%;
 }
 .filter{
     display: inline-block;
@@ -101,6 +105,10 @@ header{
 }
 .more-filters ul li button{
     height:25px;
+    font-weight:bold;
+}
+.bton:hover{
+    transform: scale(1.05);
 }
 #foodcontent{
     width:80%;
@@ -123,30 +131,53 @@ header{
 }
 .details{
     margin:5px 15px;
+    width: 60%;
 }
-strike{
+.tags{
+    font-style:italic;
+    font-family:sans-serif;
+    font-size:14px;
+    color:rgb(90, 87, 87);
+    display: block;
+    margin-top: -20px;
+}
+.timer{
+    font-size:11px;
+    line-height: 20px
+}
+.strike{
     color:red;
 }
-.details div{
-    margin-bottom:10px;
+.detail1{
+    display:flex;
+    justify-content: space-between;
+}
+div.ratings{
+    width:42px;
+    border:1px solid black;
+}
+div.ratings svg{
+    margin-bottom:-2px;
+    fill:white;
+    fill-rule: nonzero;
 }
 .bad-rating{
-    fill:red;
-    fill-rule: nonzero;
+    background: red;
 }
 .good-rating{
-    fill:green;
-    fill-rule: nonzero;
+    background:green;
 }
 .average-rating{
-    fill:rgb(92, 120, 163);
-    fill-rule: nonzero;
+    background:orangered;
 }
 .bottomMarginZero{
     margin-bottom: -20px;
 }
 .success{
     color:green;
+}
+.foodType{
+    float:right;
 }
 /*Footer Css*/
 footer{
